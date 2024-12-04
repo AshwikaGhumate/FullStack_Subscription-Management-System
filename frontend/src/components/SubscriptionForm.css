@@ -1,0 +1,101 @@
+/* Style for the subscription form container */
+.subscription-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Title of the form */
+.form-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Styling for label elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* Input fields for the form */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Focused state for input fields */
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Container for the form buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Base styles for buttons */
+.btn {
+    padding: 15px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the submit button */
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Hover effect for the submit button */
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the cancel button */
+.btn-cancel {
+    background-color: #6c757d;
+    color: #fff;
+    margin-right: 20%;
+}
+
+/* Hover effect for the cancel button */
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling for required field indicators */
+.required {
+    color: red;
+    font-weight: bold;
+}

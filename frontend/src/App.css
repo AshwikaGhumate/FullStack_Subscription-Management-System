@@ -1,0 +1,199 @@
+/* Global Styling */
+body {
+  font-family: 'Roboto', sans-serif;  /* Set global font */
+  background: #f5f7fa;               
+  margin: 0;
+  padding: 0;
+  color: #333;                       
+  line-height: 1.6;                  /* Line height for readability */
+}
+
+.app-container {
+  max-width: 1200px;                 /* Max width for content */
+  margin: 40px auto;                 /* Center the container */
+  padding: 40px;
+  background-color: #fff;           
+  border-radius: 12px;               
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around container */
+}
+
+.app-title {
+  color: #333;
+  font-size: 2.8rem;                 
+  font-weight: 700;                 
+  margin-bottom: 60px;              
+  text-align: center;                
+  text-transform: uppercase;         
+}
+
+.revenue-report {
+  text-align: center;                /* Center align the revenue report */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #28a745;                    /* Green color for positive revenue */
+  font-weight: 500;
+}
+
+.add-button {
+  background: #007bff;               
+  color: #fff;                       
+  border: none;
+  padding: 12px 24px;                 
+  border-radius: 8px;                 /* Rounded button corners */
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: 50%;                   /* Center button horizontally */
+  margin-right: auto;
+  transition: background 0.3s ease;   /* Smooth background color transition */
+}
+
+.add-button:hover {
+  background: #0056b3;               /* Darker blue on hover */
+}
+
+.styled-table {
+  width: 100%;                        
+  border-collapse: collapse;         /* Collapse table borders */
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;                   
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect for the table */
+}
+
+.styled-table thead tr {
+  background: #007bff;               
+  color: #fff;                       /* White text in header */
+  text-align: left;
+  font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;                 /* Padding inside table cells */
+  text-align: center;                
+  border: 1px solid #ddd;           
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background: #f9f9f9;                /* Light gray background for even rows */
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #007bff;   
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;          
+}
+
+.action-button {
+  padding: 10px 20px;                 /* Padding for action buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  margin-right: 10px;
+}
+
+.action-button {
+  background-color: #4caf50;          /* Green background for action button */
+  color: white;
+}
+
+.action-button:hover {
+  background-color: #45a049;          /* Darker green on hover */
+}
+
+.delete-button {
+  background-color: #e63946;          /* Red background for delete button */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d62828;          /* Darker red on hover */
+}
+
+.popup-message-box {
+  position: fixed;                    
+  top: 10px;
+  right: 10px;
+  background-color: #28a745;          /* Green background for the message box */
+  color: white;
+  padding: 15px 25px;                  
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  z-index: 1000;                       /* Ensure it appears above other elements */
+  animation: fadeInOut 3s forwards;    /* Animation for the message box */
+}
+
+.popup-message-content {
+  font-size: 1rem;            
+}        
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background for modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Modal box shadow */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);       /* Initial fade-in position */
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateY(0);           /* Fully visible position */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);       /* Fade-out position */
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;                   
+}
+
+h3 {
+  font-size: 1.8rem;                   
+}
+
+.add-button, .action-button, .delete-button {
+  font-size: 1.1rem;                   /* Uniform button font size */
+}
+
+.header-container {
+  display: flex;                       /* Use flexbox layout */
+  justify-content: space-evenly;        /* Distribute space evenly */
+}
+
+.header-container h2 {
+  margin: 0;                           /* Remove default margin */
+  font-size: 2rem;                     
+  color: #333;
+}

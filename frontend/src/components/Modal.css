@@ -1,0 +1,32 @@
+.modal-overlay {
+    position: fixed; /* Ensures the overlay covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; /* Ensures the modal appears on top of other elements */
+}
+
+.modal-content {
+    background: #ffffff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    width: 90%; /* Modal width relative to viewport width */
+    max-width: 500px; /* Maximum modal width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    position: relative; /* Allows positioning of close button inside the modal */
+}
+
+.modal-close {
+    position: absolute; 
+    top: 10px; /* Distance from the top edge of the modal */
+    right: 10px; /* Distance from the right edge of the modal */
+    background: transparent; 
+    border: none; 
+    font-size: 1.5rem; 
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
